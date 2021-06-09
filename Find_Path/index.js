@@ -389,6 +389,7 @@ function reset(){
     start.start();
     end.end();
     queue = [];
+    algo = Algorithm.NONE;
     queue.push(start);
     start.visited = true;
     curr = start;
