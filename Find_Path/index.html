@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Finder</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <style>
+        .heading {
+            background-color: #528067;
+            padding: 2%;
+            text-align: center;
+        }
+
+        .heading > h2 {
+            color: white;
+            font-weight: bold;
+        }
+
+        .dashboard {
+            border: 1px solid black;
+            margin: 2%;
+            padding: 2%;
+        }
+        main {
+            text-align: center
+        }
+        canvas {
+            border: 1px solid black;
+        }
+        
+    </style>
+    
+
+</head>
+<body>
+    <div class="heading">
+        <h2>PathFinder</h2>
+    </div>
+
+    <div class="container">
+
+        <div class="dashboard row text-center">
+            <div class="information_center">
+                <span id="length" class="col-3"><h6>Length: </h6> <p>0</p></span>
+                <span id="status" class="col-3"><h6>Status: </h6> <p class="text-secondary">Standby</p> </span>
+            </div>
+            
+            <div id="control_panel">
+                <button id="Bfs" type="button" class="btn btn-secondary col-2">Bfs</button>
+                <button id="Dijkstra" type="button" class="btn btn-secondary col-2">dijkstra</button>
+                <button id="As" type="button" class="btn btn-secondary col-2">A*</button>
+                <button id="Reset" type="button" class="btn btn-secondary col-2" onclick="reset()">Reset</button>
+            </div>
+
+        </div>
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
